@@ -1,0 +1,10 @@
+public class ExemploPPT {
+    public static void main(String[] args) {
+        int resultado = 2;
+        if (resultado > 1) {
+            System.out.println("Resultado maior que 1");
+        } else {
+            System.out.println("Resultado menor que 1");
+        }
+    }
+}
