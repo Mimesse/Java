@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class ExemploAnimal {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+
+        System.out.println("Digite o nome de um animal: ");
+        String texto = s.next();
+        String animal = example(texto);
+        System.out.println(animal);
+    }
+
+    public static String example (String animal) {
+        String result;
+        if (animal.equals("CACHORRO") || animal.equals("GATO")) {
+            return "ANIMAL DOMÉSTICO";
+        } else if (animal.equals("TIGRE")) {
+            return "ANIMAL SELVAGEM";
+        } else {
+            return "ANIMAL DESCONHECIDO";
+        }
+
+        }
+    }
