@@ -14,4 +14,6 @@
 
     // Do While = O loop do while é igual ao loop while, só que ao invés de verificar a condição em primeiro lugar, ele executa o código dentro do loop e depois verifica a condição.
 
+    // Switch = o Switch verifica uma variável e age de acordo com seus casos.
+
 
