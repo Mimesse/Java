@@ -1,0 +1,28 @@
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
+
+public class ExemploArrayList {
+    public static void main(String[] args) {
+        exemploListaSimples();
+        exemploListaSimplesOrdemAscendente();
+    }
+    public static void exemploListaSimples(){
+        System.out.println("Exemplo de Lista Simples");
+        List<String> lista = new ArrayList<>();
+        lista.add("Gustavo");
+        lista.add("Gabrielle");
+        lista.add("Victor");
+        System.out.println(lista);
+    }
+    private static void exemploListaSimplesOrdemAscendente() {
+        System.out.println("Exemplo de Lista em ordem Ascendente");
+        List<String> lista = new ArrayList<>();
+        lista.add("Gustavo");
+        lista.add("Gabrielle");
+        lista.add("Victor");
+        Collections.sort(lista);
+        System.out.println(lista);
+    }
+}
