@@ -16,4 +16,32 @@
 
     // Switch = o Switch verifica uma variável e age de acordo com seus casos.
 
+    ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    //Coleções: É um conjunto bem definido de interfaces e classes para representar e tratar grupos de dados com uma única unidade, que pode ser chamada de coleção.
+
+    //Interfaces: Permitem que coleções sejam manipuladas tendo como base o conceito "Programar para interfaces e não para implementações"
+
+    //Implementações: São as implementações concretas das iterfaces.
+
+    //Algoritmos: São os métodos que realizam as operações sobre os objetos das coleções, tais como busca e ordenação.
+
+    //Iterator: Está no topo da hierarquia e possibilita percorrer uma coleção e remover seus elementos.
+
+    //Collection: Não existe implementação direta dessa interface, mas ela define as operações básicas para as coleções, como adicionar, remover, esvaziar, etc.
+
+    //List: Define uma coleção ordenada, podendo conter elementos duplicados. Em geral, o usuário tem controle total sobre a posição onde cada elemento é inserido e pode recuperá-los através de seus índices.
+
+    //Queue: Um tipo de coleção para manter uma lista de prioridades, onde a ordem dos seus elementos, definida pela implementação de Comparable ou Comparator, determina essa prioridade.
+
+    //Map: Mapeia chaves para valores. Cada elemento tem na verdade dois objetos: uma chave e um valor. Valores podem ser duplicados, mas chaves não.
+
+    //Set: Interface que define uma coleção que não permite elementos duplicados.
+
+    //ArrayList: É como um array cujo tamanho pode crescer. A busca de um elemento é rápida, mas inserções e exclusões são lineares, o tempo cresce com o aumento do tamanho da estrutura.
+
+    //LinkedList: Implementa uma lista ligada, ou seja, cada nó contém o dado de uma referência para o próximo nó. Ao contrário do ArrayList, a busca é linear e inserções e exclusões são rápidas.
+
+
+
 
