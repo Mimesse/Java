@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class SwitchAnimal {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+
+        System.out.println("Digite o nome de um animal: ");
+        String texto = s.next();
+        String animal = exampleOfSwitch(texto);
+        System.out.println(animal);
+    }
+
+    public static String exampleOfSwitch (String animal) {
+        String result;
+        switch (animal){
+            case "CACHORRO":
+            case "GATO":
+                result = "Animal Doméstico";
+                break;
+            case "TIGRE":
+                result = "Animal Selvagem";
+                break;
+            default:
+                result = "Animal Desconhecido";
+                break;
+        }
+        return result;
+    }
+}
