@@ -1,0 +1,130 @@
+import Classe.Aluno;
+import Classe.ComparaNotaAluno;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class ExemploArrayListAluno {
+
+    public static void main(String[] args) {
+        exemploListaSimplesOrdenadaComparatorAluno();
+        exemploListaSimplesOrdenadaClasseExterna();
+    }
+        private static void exemploListaSimplesOrdenadaClasseExterna() {
+            System.out.println("Exemplo Lista Simples Ordenada");
+            List<Aluno> lista = new ArrayList<Aluno>();
+
+            Aluno a = new Aluno("Gustavo", "Java", 10);
+            Aluno b = new Aluno("Gabrielle", "Python", 20);
+            Aluno c = new Aluno("Victor", "Internet", 30);
+            lista.add(a);
+            lista.add(b);
+            lista.add(c);
+            System.out.println(lista);
+            Collections.sort(lista);
+            System.out.println(lista);
+            System.out.println("");
+        }
+
+        private static void exemploListaSimplesOrdenadaComparatorAluno() {
+            System.out.println("Exemplo Lista Ordenada Comparator");
+            List<Aluno> lista = new ArrayList<Aluno>();
+
+            Aluno a = new Aluno("Gustavo", "Java", 10);
+            Aluno b = new Aluno("Gabrielle", "Python", 20);
+            Aluno c = new Aluno("Victor", "Internet", 30);
+            lista.add(a);
+            lista.add(b);
+            lista.add(c);
+            System.out.println("Lista sem ordenação" + lista);
+            //Collections.sort(lista);
+            System.out.println("Lista com ordenação" + lista);
+            System.out.println("");
+
+            ComparaNotaAluno comparaNotaAluno = new ComparaNotaAluno();
+            Collections.sort(lista, comparaNotaAluno);
+            System.out.println("Lista com Ordenação por Nota" + lista);
+
+            System.out.println("");
+        }
+}
+
+
+// Classe ComparaNotaAluno
+
+package Classe;
+
+import java.util.Comparator;
+
+public class ComparaNotaAluno implements Comparator<Aluno> {
+    @Override
+    public int compare(Aluno o1, Aluno o2) {
+        return Double.compare(o1.getNota(), o2.getNota());
+    }
+}
+
+// Classe Aluno com Getter n Setter
+
+package Classe;
+public class Aluno implements Comparable<Aluno>{
+    private String nome;
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getCurso() {
+        return curso;
+    }
+
+    public void setCurso(String curso) {
+        this.curso = curso;
+    }
+
+    public double getNota() {
+        return nota;
+    }
+
+    public void setNota(double nota) {
+        this.nota = nota;
+    }
+
+    public String getSala() {
+        return sala;
+    }
+
+    public void setSala(String sala) {
+        this.sala = sala;
+    }
+
+    private String curso;
+    private double nota;
+    private String sala;
+
+    public  Aluno(String nome, String curso, double nota) {
+        this.nome = nome;
+        this.curso = curso;
+        this.nota = nota;;
+    }
+
+    public Aluno(String nome, String curso, double nota, String sala) {
+        this(nome, curso, nota);
+        this.sala = sala;
+    }
+
+    @Override
+    public String toString() {
+        return this.nome;
+        }
+
+    @Override
+    public int compareTo(Aluno o) {
+        return 0;
+    }
+}
+
