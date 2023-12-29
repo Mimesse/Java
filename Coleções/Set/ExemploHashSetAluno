@@ -1,0 +1,68 @@
+package Set;
+
+import Classe.Aluno;
+
+import java.util.HashSet;
+import java.util.Set;
+
+import static ArrayList.ExemploArrayList.exemploListaSimples;
+
+public class ExemploHashSetAluno {
+    public static void main(String[] args) {
+        exemploListaSimples();
+        exemploConsultando();
+        exemploRemover();
+    }
+
+    private static void exemploRemover() {
+        System.out.println("Exemplo Remover");
+        Set<Aluno> conjunto = new HashSet<Aluno>();
+
+        Aluno a = new Aluno("João da Silva", "Línux Básico", 0);
+        Aluno b = new Aluno("Antonio Sousa", "OpenOffice", 0);
+        Aluno c = new Aluno("Lúcia Ferreira", "Internet", 0);
+        Aluno d = new Aluno("Antonio Sousa", "Línux Básico", 0);
+        conjunto.add(a);
+        conjunto.add(b);
+        conjunto.add(c);
+        conjunto.add(d);
+        System.out.println(conjunto);
+
+        conjunto.remove(a);
+        System.out.println(conjunto);
+        
+    }
+
+    private static void exemploConsultando() {
+        System.out.println("Exemplo Consultando");
+        Set<Aluno> conjunto = new HashSet<Aluno>();
+
+        Aluno a = new Aluno("João da Silva", "Línux Básico", 0);
+        Aluno b = new Aluno("Antonio Sousa", "OpenOffice", 0);
+        Aluno c = new Aluno("Lúcia Ferreira", "Internet", 0);
+        Aluno d = new Aluno("Antonio Sousa", "Línux Básico", 0);
+        conjunto.add(a);
+        conjunto.add(b);
+        conjunto.add(c);
+        conjunto.add(d);
+
+        System.out.println(conjunto.contains(a));
+
+    }
+
+    private static void exemploListaSimples() {
+        Set<Aluno> conjunto = new HashSet<Aluno>();
+
+        Aluno a = new Aluno("João da Silva", "Línux Básico", 0);
+        Aluno b = new Aluno("Antonio Sousa", "OpenOffice", 0);
+        Aluno c = new Aluno("Lúcia Ferreira", "Internet", 0);
+        Aluno d = new Aluno("Antonio Sousa", "Línux Básico", 0);
+        conjunto.add(a);
+        conjunto.add(b);
+        conjunto.add(c);
+        conjunto.add(d);
+
+        System.out.println(conjunto);
+
+    }
+}
