@@ -42,6 +42,10 @@
 
     //LinkedList: Implementa uma lista ligada, ou seja, cada nó contém o dado de uma referência para o próximo nó. Ao contrário do ArrayList, a busca é linear e inserções e exclusões são rápidas.
 
+    //ArrayDeque: Está é uma classe especial que implementa uma estrutura de dados de fila de duas extremidades, onde pode inserir e remover elementos de ambas extremidades.
+
+    //PriorityQueue: Nesta classe, o elemento é inserido na parte de trás da fila. Esta operação é chamada de enfileiramento. Este mesmo elemento sai a partir da frente da fila, operação chamada de     
+    desenfileiramento. Esse procedimento de entrada e saída recebe o nome de fila, ou FIFO (first-in first-out), ou seja, "primiero a entrar, primeiro a sair".
 
 
 
