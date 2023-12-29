@@ -47,5 +47,10 @@
     //PriorityQueue: Nesta classe, o elemento é inserido na parte de trás da fila. Esta operação é chamada de enfileiramento. Este mesmo elemento sai a partir da frente da fila, operação chamada de     
     desenfileiramento. Esse procedimento de entrada e saída recebe o nome de fila, ou FIFO (first-in first-out), ou seja, "primiero a entrar, primeiro a sair".
 
+    //HashSet: O acesso aos dados é mais rápido que em um TreeSet, mas nada garante que os dados estarão ordenados.
+
+    //TreeSet: Os dados são classificados, mas o acesso é mais lento que em um HashSet. Se a necessidade for um conjunto com elementos não duplicados e acesso em ordem natural, prefira o TreeSet.
+
+    //LinkedHashSet: É derivada de HashSet, mas mantém uma lista duplamente ligada através de seus itens. Seus elementos são iterados na ordem em que foram inseridos.
 
 
