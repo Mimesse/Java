@@ -1,1 +1,80 @@
+package TarefaColecoes;
+    // Parte 1
+    //  1º - Ler os nomes
+    //  2º - Separar e guardar em um tipo de variável
+    //  3º - Ordenar os nomes em ordem alfabética e imprimir no console
+    // (Comando Split)
+
+    // Parte 2
+    //  1º - Ler o nome e o sexo dessa pessoa.
+    //  2º - Separar por grupo e gênero
+    //  3º - Imprimir no console os grupos separados.
+
+import java.util.*;
+
+public class Tarefa {
+    public static void main(String[] args) {
+        listaNomes();
+        listadeNomesEmOrdemAlfabetica();
+        listaNomeseSexo();
+
+    }
+    public static void listaNomes () {
+        System.out.println("Nomes: ");
+        List<String> lista = new ArrayList<>();
+        lista.add("Gustavo");
+        lista.add("Gabrielle");
+        lista.add("Victor");
+        lista.add("Flávio");
+        lista.add("Renata");
+        lista.add("Marcela");
+        lista.add("Amanda");
+        lista.add("Cristiano");
+        lista.add("Breno");
+        System.out.println(lista);
+        System.out.println("");
+    }
+    private static void listadeNomesEmOrdemAlfabetica () {
+        System.out.println("Nomes em Ordem Alfabética: ");
+        List<String> lista = new ArrayList<>();
+        lista.add("Gustavo");
+        lista.add("Gabrielle");
+        lista.add("Victor");
+        lista.add("Flávio");
+        lista.add("Renata");
+        lista.add("Marcela");
+        lista.add("Amanda");
+        lista.add("Cristiano");
+        lista.add("Breno");
+        Collections.sort(lista);
+        System.out.println(lista);
+        System.out.println("");
+    }
+
+    private static void listaNomeseSexo () {
+        System.out.println("Lista Nome e Sexo: ");
+        List<Caracteristicas> lista = new ArrayList<Caracteristicas>();
+
+        Caracteristicas a = new Caracteristicas("Gustavo", "Masculino");
+        Caracteristicas b = new Caracteristicas("Gabrielle", "Feminino");
+        Caracteristicas c = new Caracteristicas("Victor", "Masculino");
+        Caracteristicas d = new Caracteristicas("Flávio", "Masculino");
+        Caracteristicas e = new Caracteristicas("Renata", "Feminino");
+        Caracteristicas f = new Caracteristicas("Marcela", "Feminino");
+        Caracteristicas g = new Caracteristicas("Amanda", "Feminino");
+        Caracteristicas h = new Caracteristicas("Cristiano", "Masculino");
+        Caracteristicas i = new Caracteristicas("Breno", "Masculino");
+        lista.add(a);
+        lista.add(b);
+        lista.add(c);
+        lista.add(d);
+        lista.add(e);
+        lista.add(f);
+        lista.add(g);
+        lista.add(h);
+        lista.add(i);
+        Collections.sort(lista);
+        System.out.println(lista);
+    }
+}
 
